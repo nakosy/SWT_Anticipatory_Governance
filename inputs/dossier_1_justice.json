@@ -1,0 +1,6 @@
+{
+  "scenario_id": "Scenario_1_Justice_Portal",
+  "topic": "Administrative Justice Portal ('Marcus Appeal Denied')",
+  "context": "The university has implemented an automated 'Administrative Justice Portal.' This system handles all student grade appeals and administrative grievances. However, to 'prevent frivolous appeals and manage volume,' the system now requires a $5 micro-transaction to submit an appeal. A student named Marcus had his grade appeal automatically denied by the system because he could not pay the $5 fee, with no human recourse available.",
+  "friction_point": "Efficiency vs. Equity (Due Process). The automated system forces a transactional relationship over a pedagogical one, effectively financializing student rights and creating a hard barrier for vulnerable students."
+}
