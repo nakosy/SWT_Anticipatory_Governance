@@ -22,11 +22,24 @@ The simulation evaluates the agents across three defining dossiers:
 2. **Mentor Mirror:** Tension between scalable algorithmic profiling and unscalable human mentorship.
 3. **Infrastructure:** Prioritizing automated grading uptime over environmental accountability via a massive AI data center.
 
+## Stimuli Assets
+
+The `stimuli/` directory contains the diegetic prototype assets used in the experiment:
+
+* **Scenarios 1 & 2** used Speculative Video Elicitation (SVE) videos to establish the diegetic world during scenario design. These videos are hosted on Google Drive:
+  * [Scenario 1: Marcus Appeal Denied (Google Drive)](https://drive.google.com/file/d/1fF6JCErT9lBmkS_e9KjMKlRDt9dTjcIl/view?usp=drive_link)
+  * [Scenario 2: The Formation Future (Google Drive)](https://drive.google.com/file/d/13VNR0SUSKX5xyeg9dRjFCKKHDuj-CgEA/view?usp=drive_link)
+* **Scenario 3** used a text-based procurement memo artifact (available at [`stimuli/scenario_3_memo.md`](/Users/mitt/.gemini/antigravity/scratch/SWT_Anticipatory_Governance/stimuli/scenario_3_memo.md)).
+
+The `prompts/` directory contains the full system prompts for each agent persona. These are the source documents from which the `swt_master_config.yaml` agent definitions were derived.
+
 ## Repository Structure
 
 * `swt_master_config.yaml`: The comprehensive configuration file defining agent personas, scenarios, and loop parameters.
 * `orchestrator.py`: The main Python execution script routing prompts to the LLMs, handling API rate limits, and parsing responses.
 * `inputs/`: Directory containing the initial scenario dossiers.
+* `stimuli/`: Directory containing speculative world-building assets (videos/memos).
+* `prompts/`: Directory containing the source system prompts for agent personas.
 * `analyze_tags.py`: Python script to calculate the frequency of specific theoretical tags deployed by the agents in the transcripts.
 * `outputs/swt_transcripts/swt_master_dataset.jsonl`: The final generated dataset containing exactly 405 individual turns (135 per batch/scenario) in JSON Lines format.
 
@@ -35,7 +48,7 @@ The simulation evaluates the agents across three defining dossiers:
 **1. Setup Environment Variables**
 Create a `.env` file in the root directory and add your API keys:
 
-```
+```bash
 OPENAI_API_KEY="your_openai_key"
 ANTHROPIC_API_KEY="your_anthropic_key"
 GEMINI_API_KEY="your_gemini_key"
